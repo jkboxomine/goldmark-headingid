@@ -39,9 +39,9 @@ func main() {
 			parser.WithAutoHeadingID(),
 		),
 	)
-    mdContent := []byte(`<Markdown content>`)
+	mdContent := []byte(`<Markdown content>`)
 
-    if err := md.Convert(mdContent, &html, parser.WithContext(ctx)); err != nil {
+	if err := md.Convert(mdContent, &html, parser.WithContext(ctx)); err != nil {
 		panic(err)
 	}
 	fmt.Println(html.String())
