@@ -9,7 +9,12 @@ This extension overcomes the restrictions of the goldmark's default heading ID l
 * goldmark takes into account ASCII alphanumeric (one-byte) only while generating auto heading IDs, 
 simply discarding extended latin characters (2 bytes) and other international characters (3 bytes).
 * goldmark considers only a small set of punctuations during the auto heading ID generation. 
-As a result, the IDs for headings with other punctuations become less readable and identifiable.
+As a result, the IDs for headings with other punctuations become less readable or identifiable.
+
+With this extension, 
+
+* All unicode letter and number code points are preserved, and converted to lowercase as necessary.
+* All punctuations are taken into account and converted to hyphen as appropriate.
 
 Installation
 --------------------
