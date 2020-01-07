@@ -53,16 +53,6 @@ func main() {
 }
 ```
 
-## Test for GitHub Heading ID Generation (temporary)
-
-### Template Naming Convention
-
-This heading includes spaces only.
-
-### Template Naming Convention
-
-This heading includes non-breaking spaces only.
-
 License
 --------------------
 MIT
